@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: '맑은 고딕', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+    background-color: #faf6f0;
+    color: #3b2211;
+  }
+}
+
+/* 입력칸 전용 스타일 */
+.cafe-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d4c5b9;
+  background-color: #ffffff;
+  color: #332218;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+.cafe-input:focus {
+  border-color: #6b4226;
+  box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.18);
+}
+
+/* 주문하기 버튼 스타일 */
+.btn-order {
+  background-color: #6b4226;
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-order:hover {
+  background-color: #7d4e2d;
+}
+
+.btn-order:active {
+  transform: scale(0.99);
+}
+
+/* 다시 작성 버튼 스타일 */
+.btn-reset {
+  background-color: #f0e6dc;
+  color: #5c3a21;
+  transition: background-color 0.2s ease;
+}
+
+.btn-reset:hover {
+  background-color: #e5d7ca;
+}
